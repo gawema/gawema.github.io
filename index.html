@@ -1,1 +1,56 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<div class="gawema">
+			<div id="g">GA</div>
+			<div id="w">WE</div>
+			<div id="m">MA</div>
+		</div>
+		<div class="menu" onclick="toggleMenu()">
+			<div class="links" >
+				<a class="link" href="#">Portfolio</a>
+				<a class="link" href="#">CV</a>
+				<a class="link" href="#">Hire Me!</a>
+			</div>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<div class="console">
+			<div class="console-header">
+				<span class="dot red"></span>
+				<span class="dot yellow"></span>
+				<span class="dot green"></span>
+			</div>
+			<div class="console-body" onclick="document.getElementById('console-input').focus();">
+				<div class="terminal-output" id="terminalOutput">
+					<div class="terminal-line">
+						<span class="help-msg">Hei 👋 Welcome to my website, this are the supported commands:</br>
+						about, experience, education, skills, contact, cv </span>
+					</div>
+				</div>
+
+					<div class="terminal-line">
+						<span>></span>
+						<span class="user-input" id="terminalInput"></span>
+						<input type="text" class="console-input">
+					</div>			
+			</div>
+		</div>
+	</div>
+<script src="main.js"></script>
+</body>
+</html>
