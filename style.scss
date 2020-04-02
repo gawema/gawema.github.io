@@ -4,8 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	// border: black 2px solid;
-}
+ }
 
 body {
 	font-family: 'Ubuntu Condensed', sans-serif;
@@ -23,7 +22,6 @@ header {
 
 /* GAWEMA TITLE ANIMATION ----------------------------------- */
 
-
 .gawema {
 	height: 100%;
 	width: calc(100% - 400px);
@@ -38,7 +36,7 @@ header {
 	}
 
 	div::after {
-		position: fixed;
+		position: absolute;
 		opacity: 0;
 		animation-name: show;
 		animation-delay: 2.3s;
@@ -62,8 +60,8 @@ header {
 
 
 @keyframes show {
-	0% { opacity: 0;}
-	100% { opacity: 1;}
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 #w {
@@ -152,8 +150,8 @@ header {
 	margin-top: 10px;
 	font-size: 20px;
 	opacity: 0;
-	transform: translateX(400px);
-	transition: 1s;
+	transform: translateY(-50px);
+	transition: 0.5s;
 }
 
 .link {
@@ -161,7 +159,8 @@ header {
 	text-decoration: none;
 	
 	&:hover{
-		background-color: yellow;
+		// background-color: yellow;
+		font-weight: bolder;
 	}
 }
 
@@ -174,7 +173,7 @@ header {
 
 
 .activeLinks {
-	transform: translateX(0);
+	transform: translateY(0);
 	opacity: 1;
 }
 
@@ -297,3 +296,5 @@ header {
 ::-webkit-scrollbar {
     display: none;
 }
+
+

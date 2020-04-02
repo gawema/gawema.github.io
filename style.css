@@ -32,7 +32,7 @@ header {
   text-transform: uppercase;
 }
 .gawema div::after {
-  position: fixed;
+  position: absolute;
   opacity: 0;
   animation-name: show;
   animation-delay: 2.3s;
@@ -154,8 +154,8 @@ header {
   margin-top: 10px;
   font-size: 20px;
   opacity: 0;
-  transform: translateX(400px);
-  transition: 1s;
+  transform: translateY(-50px);
+  transition: 0.5s;
 }
 
 .link {
@@ -163,7 +163,7 @@ header {
   text-decoration: none;
 }
 .link:hover {
-  background-color: yellow;
+  font-weight: bolder;
 }
 
 .hamburger:hover span:nth-child(1) {
@@ -175,7 +175,7 @@ header {
 }
 
 .activeLinks {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
