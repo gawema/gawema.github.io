@@ -4,7 +4,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
- }
+	// border: black 2px solid;
+}
 
 body {
 	font-family: 'Ubuntu Condensed', sans-serif;
@@ -215,14 +216,15 @@ header {
 .main {
 	display: flex;
 	justify-content: flex-end;;
-	height: 400px;
+	height: calc(100vh - 200px);
 }
 
 .console {
 	// border: red 2px solid;
-	width: 650px;
-	height: 400px;
-	margin: auto 20vw;	
+	width: 55%;
+	height: 70%;
+	min-height: 380px;
+	margin: auto 20%;	
 	background-color: #333;
 	border-radius: 10px;
 	-webkit-box-shadow: 0px 0px 39px -14px rgba(0,0,0,0.68);
@@ -232,6 +234,7 @@ header {
 	.console-header {
 		width: 100%;
 		height: 10%;
+		max-height: 40px;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
@@ -241,7 +244,8 @@ header {
 			width: 15px;
 			background-color: #bbb;
 			border-radius: 50%;
-			margin-left: 10px;
+			margin-left: 15px;
+			margin-top: 10px;
 		  }
 
 		.red { background-color: rgb(255,69,58); }
@@ -252,7 +256,7 @@ header {
 	.console-body {
 		width: auto;
 		height: 90%;
-		padding: 10px;
+		padding: 2%;
 		display: flex;
 		flex-direction: column;
 		
@@ -264,7 +268,7 @@ header {
 		.terminal-line {
 			position: relative;
 			font-family: 'Anonymous Pro', monospace;
-			font-size: 14px;
+			font-size: 2vh;
 			color: whitesmoke;
 			text-align: left;
 		}
@@ -298,3 +302,10 @@ header {
 }
 
 
+.content {
+	margin-top: 100px;
+	width: 100%;
+	height: 2000px;
+	display: grid;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+}

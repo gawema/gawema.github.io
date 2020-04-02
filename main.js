@@ -39,7 +39,7 @@ const COMMANDS = {
     I Primarly work with Angular on the front-end and .Net on the back-end. I also get to work with various DevOps technologies, such as:</br>
     Azure, Docker & Kubernetes. </br> 
     Finally, since I am very passionate of "how things looks" I also get assigned various design tasks, where I get to work with a vast range of UI/UX softwares.
-    </br> <strong>Plant Jammer</strong> </br> 
+    </br> </br> <strong>Plant Jammer</strong> </br> 
     In 2018 I had the opportunity do intern as a developer for <a href='https://www.plantjammer.com/' target="_blank" style='color: white'>PlantJammer</a>.
     Here, I helped the team to develop some of the features in their app usingex React-Native and Django.
     `,
