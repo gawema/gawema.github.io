@@ -35,13 +35,13 @@ const COMMANDS = {
     `
     </br> <strong>MANCOFI</strong> </br>
     Currently working as a junior full-stack developer at <a href='https://mancofi.dk/' target="_blank" style='color: white'>MANCOFI</a>. </br>
-    Here, my main focus is to develop b2b products togheter with a team of expericed developers and consultants.</br>
-    I Primarly work with Angular on the front-end and .Net on the back-end. I also get to work with various DevOps technologies, such as:</br>
+    Here, my main focus is to develop b2b products together with a team of experienced developers and consultants.</br>
+    I Primarily work with Angular on the front-end and .Net on the back-end. I also get to work with various DevOps technologies, such as:</br>
     Azure, Docker & Kubernetes. </br> 
-    Finally, since I am very passionate of "how things looks" I also get assigned various design tasks, where I get to work with a vast range of UI/UX softwares.
+    Finally, since I am very passionate about "how things look" I also get assigned various design tasks, where I get to work with a vast range of UI/UX softwares.
     </br> </br> <strong>Plant Jammer</strong> </br> 
-    In 2018 I had the opportunity do intern as a developer for <a href='https://www.plantjammer.com/' target="_blank" style='color: white'>PlantJammer</a>.
-    Here, I helped the team to develop some of the features in their app usingex React-Native and Django.
+    In 2018 I had the opportunity to intern as a developer for <a href='https://www.plantjammer.com/' target="_blank" style='color: white'>PlantJammer</a>.
+    Here, I helped the team to develop some of the features in their app using React-Native and Django.
     `,
   education:
     `

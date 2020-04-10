@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="prova.css">
 	<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<title>Document</title>
@@ -17,9 +18,9 @@
 		</div>
 		<div class="menu" onclick="toggleMenu()">
 			<div class="links" >
-				<a class="link" href="#">Portfolio</a>
+				<a class="link" href="#resume">Portfolio</a>
 				<a class="link" href="#">CV</a>
-				<a class="link" href="#">Hire Me!</a>
+				<a class="link" href="mailto:gab.mannu@hotmail.it">Hire Me!</a>
 			</div>
 			<div class="hamburger">
 				<span></span>
@@ -51,23 +52,73 @@
 		</div>
 	</div>
 	
-	<!-- <div class="content">
-		<div class="about">
-			
+	<div class="resume" id="resume">
+		<div class="section about">
+			<div class="title">About Information</div>
+			<div class="picture profile"></div>
+			<div class="description">
+				<p>Ciao, I'm Gabriele</p>
+				<p>I am a Computer Science student, Full-stack developer and IT enthusiast. </p>	
+				<p> I am currently based in copenhagen and enrolled in a computer science bachelor at the Copenhagen School of Design and Technology.</p>
+				<div class="info-list">
+					<ul>
+						<li><strong>Phone:</strong> +45 60 73 97 07</li>
+						<li><strong>E-mail:</strong> gab.mannu@hotmail.it</li>
+						<li>
+							 <a class="link btn">Download CV </a> 
+						</li>
+					</ul>
+				</div>
 		</div>
-		<div class="experiences">
+		<div class="section">
+			<div class="cols">
+				<div class="col col-md">
+					<div class="title">	Experience </div>
+					<div class="resume-items">
+						<div class="resume-item">
+							<div class="date">2019 - Present</div>
+							<div class="name">Mancofi</div>
+							<p>
+								Currently working as a junior full-stack developer at MANCOFI. <br>
+								Here, my main focus is to develop b2b products together with a team <br> of experienced developers and consultants. <br> <br>
+								I Primarily work with Angular on the front-end and .Net on the back-end. <br> I also get to work with various DevOps technologies, such as:
+								Azure, Docker & Kubernetes. <br><br>
+								Finally, since I am very passionate about "how things look" I also get assigned various design tasks, where I get to work with a vast range of UI/UX softwares.
+							</p>
+						</div>
+						<div class="resume-item">
+							<div class="date">08/2018 - 11/2012</div>
+							<div class="name">Plant Jammer</div>
+							<p>
+								In 2018 I had the opportunity to intern as a developer for PlantJammer. <br>
+								Here, I helped the team to develop some of the features in their app using React-Native and Django.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col col-md">
+					<div class="title">
+						<div class="title_inner">Education</div>
+					</div>
+					<div class="resume-items">
+						<div class="resume-item">
+							<div class="date">2019 - Present</div>
+							<div class="name">Top Up degree in web development at KEA.</div>
+						</div>
+						<div class="resume-item">
+							<div class="date">2016 - 2019</div>
+							<div class="name">Academy profession degree in computer science at KEA.</div>
+						</div>
+						<div class="resume-item">
+							<div class="date">2011 - 2016</div>
+							<div class="name">International relations and marketing at G.Peano High School in Florence</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		</div>
-		<div class="education">
-
-		</div>
-		<div class="skills">
-
-		</div>
-		<div class="contact">
-
-		</div>
-	</div> -->
 	<script src="main.js"></script>
 </body>
 </html>
