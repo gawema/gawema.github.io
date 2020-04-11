@@ -7,7 +7,7 @@ header {
 }
 header .gawema {
   height: 100%;
-  padding-left: 15px;
+  padding-left: 40px;
   width: calc(100% - 400px);
 }
 header .gawema div {
@@ -15,6 +15,13 @@ header .gawema div {
   font-size: 50px;
   position: relative;
   text-transform: uppercase;
+}
+header .gawema div a.home-link {
+  position: fixed;
+  left: 24px;
+}
+header .gawema div a.home-link:hover {
+  background: none;
 }
 header .gawema div::after {
   animation-delay: 2.3s;
