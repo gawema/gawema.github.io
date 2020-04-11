@@ -387,4 +387,16 @@ main .console .console-body .console-input {
   filter: alpha(opacity=0);
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 15px 30px;
+  font-size: 30px;
+}
+footer a:hover {
+  color: #ede574;
+  background: none;
+}
+
 /*# sourceMappingURL=style.css.map */
