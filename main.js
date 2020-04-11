@@ -45,7 +45,7 @@ const COMMANDS = {
     `,
   education:
     `
-      <strong>2019-2021: </strong> Top Up degree in web development at <a href='https://kea.dk/en' target="_blank" style='color: white'>KEA</a>. </br>
+      <strong>2019-2021: </strong> Bachelor degree in web development at <a href='https://kea.dk/en' target="_blank" style='color: white'>KEA</a>. </br>
       <strong>2016-2019: </strong> Academy profession degree in computer science at <a href='https://kea.dk/en' target="_blank" style='color: white'>KEA</a>. </br>
       <strong>2011-2016: </strong> International relations and marketing at <a href='http://www.peano.edu.it' target="_blank" style='color: white'>G.Peano</a> High School in Florence, Italy.
     `,

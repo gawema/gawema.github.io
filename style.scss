@@ -10,6 +10,10 @@ $yellow: #ede574;
     display: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,7 +40,6 @@ a {
         background-color: $yellow;
     }
 }
-
 
 main {
     display: flex;
