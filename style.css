@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap");
+.mobile-header {
+  display: none;
+  font-size: 40px;
+  margin: 20px;
+}
+
 header {
   display: flex;
   height: 200px;
@@ -301,50 +307,6 @@ header .hamburger.active span:nth-child(3) {
   padding-bottom: 0;
 }
 
-@media only screen and (max-width: 768px) {
-  header, .console-container {
-    display: none !important;
-  }
-
-  .resume {
-    margin: 0;
-    overflow: hidden;
-  }
-  .resume .section {
-    max-width: 100%;
-  }
-  .resume .section .picture {
-    margin: 15px;
-  }
-  .resume .section .description {
-    width: auto;
-    margin-left: 140px;
-    margin-right: 10vw;
-  }
-  .resume .section .description .info-list ul {
-    position: absolute;
-    left: 10vw;
-    width: 140%;
-  }
-  .resume .section .description .info-list ul strong, .resume .section .description .info-list ul a {
-    display: none;
-  }
-  .resume .section .description .info-list ul li {
-    width: fit-content !important;
-    text-align: center;
-    margin-right: 20px !important;
-    border: 2px solid black;
-    padding: 12px;
-  }
-  .resume .section .description .info-list ul li:last-child {
-    opacity: 0;
-  }
-  .resume .section .cols .col.col-md {
-    width: auto;
-    margin-top: 40px;
-    margin-bottom: 100px;
-  }
-}
 ::-webkit-scrollbar {
   display: none;
 }
@@ -445,9 +407,63 @@ footer {
   margin: 0 0 15px 30px;
   font-size: 30px;
 }
+footer a {
+  display: none;
+}
+footer a:first-child {
+  display: block;
+}
 footer a:hover {
   color: #ede574;
   background: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-header {
+    display: block;
+  }
+
+  header, .console-container {
+    display: none !important;
+  }
+
+  .resume {
+    margin: 0;
+    overflow: hidden;
+  }
+  .resume .section {
+    max-width: 100%;
+    margin: 20px auto !important;
+  }
+  .resume .section .title {
+    margin-left: 10px;
+  }
+  .resume .section .picture {
+    margin: 15px;
+    margin-left: 20px;
+  }
+  .resume .section .description {
+    width: auto;
+    margin-left: 140px;
+    margin-right: 20px;
+  }
+  .resume .section .description .info-list {
+    display: none;
+  }
+  .resume .section .cols .col.col-md {
+    width: auto;
+    margin-bottom: 100px;
+  }
+
+  footer {
+    position: static !important;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 20px 0 !important;
+  }
+  footer a {
+    display: block !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

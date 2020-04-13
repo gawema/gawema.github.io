@@ -1,50 +1,50 @@
 
 @media only screen and (max-width: 768px){
+	.mobile-header {
+		display: block
+	}
 	header, .console-container {
 		display: none !important;
 	}
 	.resume {
 		margin: 0;
 		overflow: hidden;
+		
 		.section {
 			max-width: 100%;
+			margin: 20px auto !important;
+			
+			.title {
+				margin-left: 10px;
+			}
+
 			.picture {
 				margin: 15px;
+				margin-left: 20px;
 			}
+		
 			.description {
 				width: auto;
 				margin-left: 140px;
-				margin-right: 10vw;
+				margin-right: 20px;
 				.info-list {
-					// position: fixed;
-					// bottom: 0;
-					ul {
-						position: absolute;
-						left: 10vw;
-						width: 140%;
-						strong,a {
-							display: none;
-						}
-						li {
-							width: fit-content !important;
-							text-align: center;
-							margin-right: 20px !important;
-							border: 2px solid black;
-							padding: 12px;
-							&:last-child {
-								opacity: 0;
-							}
-						}
-					}
+					display: none;
 				}
 			}
 			
 			.cols .col.col-md {
 				width: auto;
-				margin-top: 40px;
 				margin-bottom: 100px;
-
 			}
+		}
+	}
+	footer{
+		position: static !important;
+		display: flex;
+		justify-content: space-evenly;
+		margin: 0 0 20px 0 !important;
+		a {
+			display: block !important;
 		}
 	}
 }

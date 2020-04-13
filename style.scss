@@ -2,7 +2,6 @@
 @import './header.scss';
 @import './animation.scss';
 @import './resume.scss';
-@import './responsive.scss';
 
 
 $yellow: #ede574;
@@ -126,8 +125,17 @@ footer {
     margin: 0 0 15px 30px;
     font-size: 30px;
     // background-color: black;
-    a:hover {
-        color: $yellow;
-        background: none;
+    a {
+        display: none;
+
+        &:first-child {
+            display: block;
+        }
+        &:hover {
+            color: $yellow;
+            background: none;
+        }
     }
 }
+
+@import './responsive.scss';
