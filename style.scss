@@ -2,6 +2,7 @@
 @import './header.scss';
 @import './animation.scss';
 @import './resume.scss';
+@import './responsive.scss';
 
 
 $yellow: #ede574;
@@ -41,7 +42,7 @@ a {
     }
 }
 
-main {
+.console-container {
     display: flex;
     height: calc(100vh - 200px);
     justify-content: flex-end;
