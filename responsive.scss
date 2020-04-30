@@ -9,30 +9,42 @@
 	.resume {
 		margin: 0;
 		overflow: hidden;
-		
+		font-size: calc(0.8rem + 0.5vh + 0.5vw);
+
 		.section {
 			max-width: 100%;
-			margin: 30px auto !important;
+			margin: 4vw auto !important;
 			
 			.title {
-				margin-left: 10px;
+				margin-left: 5vw;
 			}
 
 			.picture {
 				margin: 15px;
-				margin-left: 20px;
+				margin-left: 5vw;
+				margin-right: 0;
+				max-width: 35vw;
+				max-height: 35vw;
+				width:20vh;
+				height: 20vh;
+
 			}
 		
 			.description {
+				height: fit-content !important;
 				width: auto;
-				margin-left: 140px;
-				margin-right: 20px;
+				margin-left: 50vw;
+				margin-right: 5vw;
 				.info-list {
+					display: none;
+				}
+				p.only-full-size{
 					display: none;
 				}
 			}
 			
 			.cols .col.col-md {
+				margin-left: 4vw;
 				width: auto;
 				margin-bottom: 100px;
 			}

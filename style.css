@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap");
 .mobile-header {
   display: none;
-  font-size: 40px;
-  margin: 20px;
+  font-size: 6vh;
+  margin: 1vh 4vh;
 }
 
 header {
@@ -214,6 +214,7 @@ header .hamburger.active span:nth-child(3) {
 .resume .section {
   margin: 70px auto;
   max-width: 900px;
+  height: fit-content;
 }
 .resume .section .title {
   box-shadow: inset 0 -6px 0px #ede574;
@@ -430,27 +431,38 @@ footer a:hover {
   .resume {
     margin: 0;
     overflow: hidden;
+    font-size: calc(0.8rem + 0.5vh + 0.5vw);
   }
   .resume .section {
     max-width: 100%;
-    margin: 20px auto !important;
+    margin: 4vw auto !important;
   }
   .resume .section .title {
-    margin-left: 10px;
+    margin-left: 5vw;
   }
   .resume .section .picture {
     margin: 15px;
-    margin-left: 20px;
+    margin-left: 5vw;
+    margin-right: 0;
+    max-width: 35vw;
+    max-height: 35vw;
+    width: 20vh;
+    height: 20vh;
   }
   .resume .section .description {
+    height: fit-content !important;
     width: auto;
-    margin-left: 140px;
-    margin-right: 20px;
+    margin-left: 50vw;
+    margin-right: 5vw;
   }
   .resume .section .description .info-list {
     display: none;
   }
+  .resume .section .description p.only-full-size {
+    display: none;
+  }
   .resume .section .cols .col.col-md {
+    margin-left: 4vw;
     width: auto;
     margin-bottom: 100px;
   }
