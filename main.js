@@ -14,7 +14,6 @@ function toggleMenu() {
 
 }
 
-
 const BLACKLISTED_KEY_CODES = [ 38 ];
 const COMMANDS = {
   pwd:
@@ -116,6 +115,20 @@ function backspace(e) {
   userInput.innerHTML = userInput.innerHTML.slice(0, userInput.innerHTML.length - 1);
 };
 
+
 document.addEventListener("DOMContentLoaded", init);
 document.addEventListener("keypress", key);
 document.addEventListener("keydown", backspace);
+
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 10) {
+    color = '#333'
+  } else {
+    color = 'transparent'
+  }
+  document.querySelectorAll(".fade").forEach(el=>{
+    el.style.color = color;
+  });
+});

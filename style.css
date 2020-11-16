@@ -21,6 +21,7 @@ header .gawema div {
   font-size: 50px;
   position: relative;
   text-transform: uppercase;
+  transition: color 0.1s;
 }
 header .gawema div a.home-link {
   position: fixed;
