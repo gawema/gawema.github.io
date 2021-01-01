@@ -21,7 +21,6 @@ header .gawema div {
   font-size: 50px;
   position: relative;
   text-transform: uppercase;
-  transition: color 0.1s;
 }
 header .gawema div a.home-link {
   position: fixed;
@@ -420,6 +419,22 @@ footer a:hover {
   background: none;
 }
 
+.flashing-animation {
+  opacity: 1;
+  animation-name: flash;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media only screen and (max-width: 768px) {
   .mobile-header {
     display: block;
