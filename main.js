@@ -76,7 +76,6 @@ function executeCommand(input) {
   }
   output = `<div> > ${input}</div>`;
   if(input === 'clear'){
-    console.log('clear')
     terminalOutput.innerHTML = '';
     return
   }
@@ -95,8 +94,13 @@ function executeCommand(input) {
 
 function key(e) {
   const input = userInput.innerHTML;
-
   if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
+    return;
+  }
+
+  // for safari
+  if (e.keyCode == 8 ) {
+    userInput.innerHTML = userInput.innerHTML.slice(0, userInput.innerHTML.length - 1);
     return;
   }
 
