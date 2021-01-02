@@ -93,6 +93,7 @@ function executeCommand(input) {
 };
 
 function key(e) {
+  e.preventDefault();
   const input = userInput.innerHTML;
   if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
     return;
