@@ -11,7 +11,7 @@
     width: 100%;
 
     .section {
-        margin: 70px auto;
+        margin: 50px auto;
         max-width: 900px;
         height: fit-content;
 
@@ -129,4 +129,30 @@
 
 
 
+}
+
+.cards-grid {
+    margin: 50px auto;
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card { 
+        width: 250px;
+        height: 180px;
+        margin: 20px;
+        background-color: lightblue;
+        position: relative;
+    }
+    .card::before { 
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 180px;
+        top: -18px;
+        left: 10px;
+        z-index: -1;
+        border: 4px solid #333;
+    }
 }
