@@ -319,8 +319,9 @@ header .hamburger.active span:nth-child(3) {
   width: 250px;
   height: 180px;
   margin: 20px;
-  background-color: lightblue;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .cards-grid .card::before {
   content: "";

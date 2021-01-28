@@ -142,8 +142,10 @@
         width: 250px;
         height: 180px;
         margin: 20px;
-        background-color: lightblue;
         position: relative;
+        // background-image: url(https://source.unsplash.com/random);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .card::before { 
         content: "";

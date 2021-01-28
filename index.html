@@ -8,8 +8,9 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="prova.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script type="text/javascript" src="/data.json"></script>
+	<script type="text/javascript" src="/cards.js"></script>
 	<title>GAWEMA</title>
 </head>
 <body>
@@ -137,15 +138,8 @@
 
 		<div class="resume projects" id="projects">
 			<div class="section-header"> <img src="zigline.svg" ><h1>Projects</h1> <img src="zigline.svg"> </div>
-			<div class="section">
-				<div class="cards-grid">
-					<div class="card"></div>
-					<div class="card"></div>
-					<div class="card"></div>
-					<div class="card"></div>
-					<div class="card"></div>
-					<div class="card"></div>
-				</div>
+			<div id="card-container" class="section">
+				<cards-component class="cards-grid" ></card-component>
 			</div>
 		</div>
 
