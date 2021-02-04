@@ -41,10 +41,42 @@ a {
     }
 }
 
-.console-container {
+.hero {
     display: flex;
     height: calc(100vh - 200px);
     justify-content: center;
+    margin: 50px;
+
+    .hero-left {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-right: 30px;
+        flex-direction: column;
+
+        .btn {
+            margin-top: 10px;
+            width: fit-content;
+        }
+        
+        h1 {
+            max-width: 415px;
+            line-height: 48px;
+        }
+    }
+    .hero-right {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .scroll {
+        font-size: 40px;
+        position: absolute;
+        bottom: 5%;
+    }
+
 
     .console {
         background-color: #333;
@@ -52,9 +84,7 @@ a {
         color: whitesmoke;
         font-family: 'Anonymous Pro', monospace;
         height: 70%;
-        margin: auto 20%;
         min-height: 380px;
-        width: 55%;
         text-align: left;
         box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.68);
         -webkit-box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.68);
