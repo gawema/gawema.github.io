@@ -138,6 +138,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
+    
+
     .card { 
         width: 250px;
         height: 180px;
@@ -146,6 +148,8 @@
         // background-image: url(https://source.unsplash.com/random);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
     .card::before { 
         content: "";

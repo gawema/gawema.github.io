@@ -1,7 +1,7 @@
 projects = [
 	{
 		"name" : "Test1",
-		"thumbnail" : "https://source.unsplash.com/random/1600x900"
+		"thumbnail" : "/projects/okapi/okapi-landing.png"
 	},
 	{
 		"name" : "Test2",
