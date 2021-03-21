@@ -137,3 +137,8 @@ window.addEventListener("scroll", () => {
     el.style.color = color;
   });
 });
+
+
+function openProjectPics() {
+  document.getElementById("fadeshow").style.opacity = "1";
+}
