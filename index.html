@@ -12,16 +12,14 @@
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script type="text/javascript" src="/data.json"></script>
 	<script type="text/javascript" src="/cards.js"></script>
+	<script type="text/javascript" src="/include.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 	<title>GAWEMA</title>
 </head>
 
 <body>
-	<div class="mobile-header">GAWEMA</div>
-	<header>
-		<div class="gawema">GAWEMA 👉 Portfolio currently on renovation</div>
-	</header>
-
+	<div w3-include-html="header.html"></div> 
+	
 	<div class="hero">
 		<div class="hero-left">
 			<h1 id="hero-title">Ciao, I'm {{name}}  </br>
@@ -40,18 +38,18 @@
 					<div class="terminal-output" id="terminalOutput">
 						<div class="terminal-line">
 							<span class="help-msg">Whant to know more about me?</br>Type one of the following comand:</br>
-							about, experience, education, skills, contact, cv </span>
+								about, experience, education, skills, contact, cv </span>
+							</div>
 						</div>
+						<div class="terminal-line">
+							<span>></span>
+							<span class="user-input" id="terminalInput"></span>
+							<span class="flashing-animation">|</span>
+							<input type="text" class="console-input">
+						</div>			
 					</div>
-					<div class="terminal-line">
-						<span>></span>
-						<span class="user-input" id="terminalInput"></span>
-						<span class="flashing-animation">|</span>
-						<input type="text" class="console-input">
-					</div>			
 				</div>
 			</div>
-		</div>
 		<div class="scroll">👇</div>
 	</div>
 
@@ -62,16 +60,10 @@
 		</div>
 	</div>
 
-	<footer>
-		<a href="https://github.com/gawema" class="github"><i class="fab fa-github"></i></a>
-		<a href="https://www.linkedin.com/in/gabriele-westh-mannucci-021322152/" class="linkedin"><i
-				class="fab fa-linkedin"></i></a>
-		<a href="mailto:gab.mannu@hotmail.it" class="email"><i class="fas fa-envelope"></i></a>
-		<a href="tel:+4560739707" class="phone"><i class="fas fa-phone"></i></a>
-	</footer>
-	<a href="https://hits.seeyoufarm.com"><img
-			src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgawema.com&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
-			hidden /></a>
+	<div w3-include-html="footer.html"></div> 
+	
+	<div w3-include-html="hits.html"></div> 
+
 	<script src="main.js"></script>
 	<script>
 		var app = new Vue({
@@ -81,6 +73,9 @@
 			}
 		})
 	</script>
+	<script>
+		includeHTML();
+		</script>
 </body>
 
 </html>
