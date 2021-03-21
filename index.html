@@ -12,6 +12,7 @@
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script type="text/javascript" src="/data.json"></script>
 	<script type="text/javascript" src="/cards.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 	<title>GAWEMA</title>
 </head>
 
@@ -23,7 +24,7 @@
 
 	<div class="hero">
 		<div class="hero-left">
-			<h1>Ciao, I'm Gabriele 👋 </br>
+			<h1 id="hero-title">Ciao, I'm {{name}}  </br>
 				I am a Computer Science student, full-stack developer and IT enthusiast.
 			</h1>
 			<a class="btn" href='./Gabriele_Mannucci_Resume.pdf' Download>Download CV </a> 	
@@ -72,6 +73,14 @@
 			src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgawema.com&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
 			hidden /></a>
 	<script src="main.js"></script>
+	<script>
+		var app = new Vue({
+			el: '#hero-title',
+			data: {
+				name: 'Gabriele'
+			}
+		})
+	</script>
 </body>
 
 </html>
