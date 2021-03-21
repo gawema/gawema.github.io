@@ -10,9 +10,9 @@
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	<script type="text/javascript" src="/data.json"></script>
-	<script type="text/javascript" src="/cards.js"></script>
-	<script type="text/javascript" src="/include.js"></script>
+	<script type="text/javascript" src="scripts/data.js"></script>
+	<script type="text/javascript" src="scripts/cards.js"></script>
+	<script type="text/javascript" src="scripts/include.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 	<title>GAWEMA</title>
 </head>
@@ -25,7 +25,7 @@
 			<h1 id="hero-title">Ciao, I'm {{name}}  </br>
 				I am a Computer Science student, full-stack developer and IT enthusiast.
 			</h1>
-			<a class="btn" href='./Gabriele_Mannucci_Resume.pdf' Download>Download CV </a> 	
+			<a class="btn" href='resources/Gabriele_Mannucci_Resume.pdf' Download>Download CV </a> 	
 		</div>
 		<div class="hero-right">
 		<div class="console">
@@ -54,7 +54,7 @@
 	</div>
 
 	<div class="resume projects" id="projects">
-		<div class="section-header"> <img src="zigline.svg" ><h1>Projects</h1> <img src="zigline.svg"> </div>
+		<div class="section-header"> <img src="resources/zigline.svg" ><h1>Projects</h1> <img src="resources/zigline.svg"> </div>
 		<div id="card-container" class="section">
 			<cards-component class="cards-grid" ></card-component>
 		</div>
@@ -64,7 +64,7 @@
 	
 	<div w3-include-html="hits.html"></div> 
 
-	<script src="main.js"></script>
+	<script src="scripts/main.js"></script>
 	<script>
 		var app = new Vue({
 			el: '#hero-title',
