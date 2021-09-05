@@ -280,12 +280,8 @@ body, a {
 a.btn {
   border: 2px solid black;
   padding: 12px; }
-
-a:hover {
-  background-color: #ede574; }
-
-a.no-effect:hover {
-  background-color: transparent; }
+  a.btn:hover {
+    background-color: #ede574; }
 
 .hero {
   display: flex;

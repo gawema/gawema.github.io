@@ -18,44 +18,46 @@ const BLACKLISTED_KEY_CODES = [ 38 ];
 const COMMANDS = {
   pwd:
     `Hei 👋 Welcome to my website, these are the supported commands:</br>
-    about, experience, education, skills, contact, cv `,
+    about, experience, education, skills, contact `,
   ls:
     `
-    about   experience   education   skills   contact   cv 
+    about   experience   education   skills   contact 
     `,
   help:
-    'Supported commands: <br> about, experience, education, skills, contact, cv',
+    'Supported commands: <br> about, experience, education, skills, contact',
   about:
     `Ciao, I'm Gabriele, <br>
-    I am a Computer Science student, full-stack developer and IT enthusiast. 
-    I am currently based in Copenhagen and enrolled in a Computer Science Bachelor at the Copenhagen School of Design and Technology.
+    I am a Web developer and Design enthusiast. 
+    I am currently based in Copenhagen and working as a Frontend Developer at <a href='https://www.dwarf.dk/' target="_blank" style='color: white'>DWARF</a>.
     `,
   experience:
     `
-    </br> <strong>MANCOFI</strong> </br>
-    Currently working as a junior full-stack developer at <a href='https://mancofi.dk/' target="_blank" style='color: white'>MANCOFI</a>. </br>
-    Here, my main focus is to develop b2b products together with a team of experienced developers and consultants.</br>
-    I primarily work with Angular on the front-end and .Net on the back-end. I also get to work with various DevOps technologies, such as:</br>
-    Azure, Docker & Kubernetes. </br> 
-    Finally, since I am very passionate about "how things look" I also get assigned various design tasks, where I get to work with a vast range of UI/UX softwares.
+    </br> <strong>DWARF</strong> </br>
+    Frontend developer at <a href='https://www.dwarf.dk/' target="_blank" style='color: white'>DWARF</a>. </br>
+    Working with Vue & NuxtJS.
+
+    </br>  </br> <strong>MANCOFI</strong> </br>
+    Junior full-stack developer at <a href='https://mancofi.dk/' target="_blank" style='color: white'>MANCOFI</a>. </br>
+    Worked with Angular, .Net, Azure & Docker.
+
     </br> </br> <strong>Plant Jammer</strong> </br> 
-    In 2018 I had the opportunity to intern as a developer for <a href='https://www.plantjammer.com/' target="_blank" style='color: white'>PlantJammer</a>.
-    Here, I helped the team to develop some of the features in their app using React-Native and Django.
+    Mobile developer Intern for <a href='https://www.plantjammer.com/' target="_blank" style='color: white'>PlantJammer</a>. </br>
+    Worked with React-Native and Django.
     `,
   education:
-    `
-      <strong>2019-2021: </strong> Bachelor degree in Web Development at <a href='https://kea.dk/en' target="_blank" style='color: white'>KEA</a>. </br>
+    ` <strong>2019-2021: </strong> Bachelor degree in Web Development at <a href='https://kea.dk/en' target="_blank" style='color: white'>KEA</a>. </br>
       <strong>2016-2019: </strong> Academy profession degree in Computer Science at <a href='https://kea.dk/en' target="_blank" style='color: white'>KEA</a>. </br>
       <strong>2011-2016: </strong> International relations and marketing at <a href='http://www.peano.edu.it' target="_blank" style='color: white'>G.Peano</a> High School in Florence, Italy.
-    `,
+      </br>
+      `,
   skills:
-    `
-    <strong>Languages:</strong> JS, TS, HTML, CSS, PHP, Java, C#, Python, C.
-    <br> <strong>Frameworks:</strong> Angular, React-native, Ionic, .Net, Spring, Django.
-    <br> <strong>Technologies:</strong> Relational Databases, Azure & AWS, Docker, Git.
-    <br> <strong>UI/UX Softwares:</strong> Adobe xd, illustrator, Figma.
+    `<strong>Languages: </strong> JS, TS, HTML, CSS, PHP, C#, Python, C.
+    <br> <strong>Frameworks: </strong> Vue, React, Angular, React-native, Flutter, Ionic, .Net, Django.
+    <br> <strong>Technologies: </strong> Azure & AWS, Docker, Git, Netlify, Prismic'
+    <br> <strong>UI/UX Softwares: </strong> Adobe xd, illustrator, Figma.
+    </br>
     `,
-  cv: " <a href='./assets/Gabriele_Mannucci_Resume.pdf' target='_blank' style='color: white'>curriclum-vitae.pdf</a>",
+  // cv: " <a href='./assets/Gabriele_Mannucci_Resume.pdf' target='_blank' style='color: white'>curriclum-vitae.pdf</a>",
   contact: 
     `
     <strong>email:</strong> <a href='mailto:gab.mannu@hotmail.it'style='color: white'>gab.mannu@hotmail.it</a>
@@ -82,7 +84,7 @@ function executeCommand(input) {
   else if (!COMMANDS.hasOwnProperty(input)) {
     output += `
     command not found: ${input}
-    <br> Supported commands: about, experience, education, skills, contact, cv,
+    <br> Supported commands: about, experience, education, skills, contact
     `;
   } else {
     output += COMMANDS[input];

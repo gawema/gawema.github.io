@@ -35,14 +35,8 @@ a {
     &.btn {
         border: 2px solid black;
         padding: 12px;
-    }
-
-    &:hover {
-        background-color: $yellow;
-    }
-    &.no-effect {
         &:hover {
-            background-color: transparent;
+            background-color: $yellow;
         }
     }
 }
