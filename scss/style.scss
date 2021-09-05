@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
+@import './header.scss';
+@import './animation.scss';
+@import './resume.scss';
+@import './filters.scss';
+
+
+$yellow: #ede574;
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // border: black 2px solid;
+}
+
+body, a {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    text-decoration: none;
+    // text-align: center;
+    // background-color: rgb(19, 19, 19);
+}
+ 
+a {          
+    &.btn {
+        border: 2px solid black;
+        padding: 12px;
+    }
+
+    &:hover {
+        background-color: $yellow;
+    }
+}
+
+.hero {
+    display: flex;
+    height: calc(100vh - 200px);
+    justify-content: center;
+    margin: 50px;
+
+    .hero-left {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-right: 30px;
+        flex-direction: column;
+
+        .btn {
+            margin-top: 10px;
+            width: fit-content;
+        }
+        
+        h1 {
+            max-width: 415px;
+            line-height: 48px;
+        }
+    }
+    .hero-right {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .scroll {
+        font-size: 40px;
+        position: absolute;
+        bottom: 5%;
+    }
+
+
+    .console {
+        background-color: #333;
+        border-radius: 10px;
+        color: whitesmoke;
+        font-family: 'Anonymous Pro', monospace;
+        height: 70%;
+        min-height: 380px;
+        text-align: left;
+        box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.68);
+        -webkit-box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.68);
+        -moz-box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.68);
+    
+        .console-header {
+            align-items: center;
+            display: flex;
+            height: 10%;
+            justify-content: flex-start;
+            max-height: 40px;
+            width: 100%;
+    
+            .dot {
+                background-color: #bbb;
+                border-radius: 50%;
+                height: 15px;
+                margin-left: 15px;
+                margin-top: 10px;
+                width: 15px;
+            }
+    
+            .red {
+                background-color: rgb(255, 69, 58);
+            }
+    
+            .yellow {
+                background-color: rgb(255, 214, 10);
+            }
+    
+            .green {
+                background-color: rgb(50, 215, 75);
+            }
+        }
+    
+        .console-body {
+            display: flex;
+            flex-direction: column;
+            height: 90%;
+            padding: 2%;
+            width: auto;
+    
+            .terminal-output {
+                overflow-y: hidden;
+                overflow: auto;
+            }
+    
+            .terminal-line {
+                font-size: 2vh;
+                position: relative;
+            }
+    
+            .console-input {
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+    
+        } 
+    
+    }
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 17px;
+    }
+    h1 {
+        font-size: 25px;
+        margin: 0 20px;
+        text-transform: uppercase;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 15px 30px;
+    font-size: 30px;
+    // background-color: black;
+    a {
+        display: none;
+
+        &:first-child {
+            display: block;
+        }
+        &:hover {
+            color: $yellow;
+            background: none;
+        }
+    }
+}
+
+.flashing-animation{
+    opacity: 1;
+    animation-name: flash;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes flash {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@import './responsive.scss';

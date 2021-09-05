@@ -1,0 +1,66 @@
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#w {
+    animation-name: drop-w, slide-w;
+}
+
+#m {
+    animation-name: drop-m, slide-m;
+}
+
+#w,
+#m {
+    animation-duration: 1.5s, 1.4s;
+    animation-delay: 1s, 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease, ease;
+}
+
+
+@keyframes drop-w {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes drop-m {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(100px);
+    }
+}
+
+@keyframes slide-w {
+    0% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(50px) translateX(-50px);
+    }
+}
+
+@keyframes slide-m {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(100px) translateX(-110px);
+    }
+}

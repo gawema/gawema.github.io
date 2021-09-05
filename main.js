@@ -55,7 +55,7 @@ const COMMANDS = {
     <br> <strong>Technologies:</strong> Relational Databases, Azure & AWS, Docker, Git.
     <br> <strong>UI/UX Softwares:</strong> Adobe xd, illustrator, Figma.
     `,
-  cv: " <a href='./Gabriele_Mannucci_Resume.pdf' target='_blank' style='color: white'>curriclum-vitae.pdf</a>",
+  cv: " <a href='./assets/Gabriele_Mannucci_Resume.pdf' target='_blank' style='color: white'>curriclum-vitae.pdf</a>",
   contact: 
     `
     <strong>email:</strong> <a href='mailto:gab.mannu@hotmail.it'style='color: white'>gab.mannu@hotmail.it</a>
