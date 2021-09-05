@@ -40,6 +40,11 @@ a {
     &:hover {
         background-color: $yellow;
     }
+    &.no-effect {
+        &:hover {
+            background-color: transparent;
+        }
+    }
 }
 
 .hero {

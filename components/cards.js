@@ -7,7 +7,7 @@ class Cards extends HTMLElement {
         let cards = ''
         var myProjects = projects;
         myProjects.forEach(project => {
-            cards += '<div class="card bw" style="background-image: url('+project.thumbnail+'); ">' +'</div>'
+            cards += '<a class="no-effect" href="'+project.link+'" target="_blank"> <div class="card bw" style="background-image: url('+project.thumbnail+'); ">' +'</div></a>'
         });
         this.innerHTML = cards;
     }

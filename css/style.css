@@ -284,6 +284,9 @@ a.btn {
 a:hover {
   background-color: #ede574; }
 
+a.no-effect:hover {
+  background-color: transparent; }
+
 .hero {
   display: flex;
   height: calc(100vh - 200px);
